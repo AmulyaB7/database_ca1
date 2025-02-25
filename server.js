@@ -31,7 +31,6 @@ app.get("/restaurents", async (req, res) => res.json(await Book.find()));
 
 app.post("/restaurents", async (req, res) => res.json(await new Book(req.body).save()));
 
-
 app.get("/MenuItems", async(req,res) => res.json(await member.find()));
 
 app.post("/MenuItems", async(req,res) => res.json(await new member(req.body).save()));
